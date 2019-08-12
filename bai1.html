@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+
+<script>
+    let a = parseInt(prompt("Nhap vao do dai day fibonacci: "));
+    let s = 1;
+    let s1 = 0;
+    let s2 = 0;
+    daySo = "0 1 ";
+    function inDayFibonacci() {
+        if (a == 1) {
+            alert("Day fibonacci cua ban: 0");
+        } else if (a == 2) {
+            alert("Day fibonacci cua ban: 0 1");
+        } else {
+            for (let i = 2; i < a; i++) {
+                s1 = s2;
+                s2 = s;
+                s = s1 + s2;
+                daySo += s + " ";
+            }
+            alert("Day fibonacci cua ban: " + daySo);
+        }
+    }
+    inDayFibonacci();
+</script>
+
+</body>
+</html>

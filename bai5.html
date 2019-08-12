@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+
+<h3>Day la chuong trinh tinh lai suat ngan hang</h3>
+So tien vay:
+<br/><input type="text" id="soTienVay"> VND<br/>
+So thang cho vay:
+<br/><input type="text" id="thang"> Thang<br/>
+Lai suat:
+<br/><input type="text" id="laiSuat"> % / thang<br/><br/>
+<button type="button" onclick="tinhLaiSuat()">Tinh lai</button><br/><br/>
+Tien lai:
+<p id="lai"></p>
+Tien phai tra:
+<p id="tienPhaiTra"></p>
+
+<script>
+    function tinhLaiSuat() {
+        let soTienVay = parseFloat(document.getElementById("soTienVay").value);
+        let thang = parseInt(document.getElementById("thang").value);
+        let laiSuat = parseFloat(document.getElementById("laiSuat").value) / 100;
+        let i = 1;
+        let a = soTienVay;
+        for (i; i<= thang; i++) {
+            soTienVay = soTienVay + soTienVay*laiSuat;
+        }
+        document.getElementById("lai").innerHTML = soTienVay - a;
+        document.getElementById("tienPhaiTra").innerHTML = soTienVay;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<style>
+    p, pre {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0px 0px 0px 0px;
+    }
+</style>
+<body>
+
+<script>
+    function veTamGiac1() {
+        let i = 0;
+        for (i; i < 5; i++) {
+            document.write("<p>");
+            for (let j = 0; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("</p>");
+        }
+    }
+    veTamGiac1();
+    document.write("<br>");
+    function veTamGiac2() {
+        let i = 1;
+        for (i; i <= 5; i++) {
+            document.write("<p>");
+            for (let j = 0; j <= (5-i); j++) {
+                document.write("*");
+            }
+            document.write("</p>");
+        }
+    }
+    veTamGiac2();
+    document.write("<br>");
+    function veTamGiac3() {
+        let i = 0;
+        for (i; i < 5; i++) {
+            document.write("<pre>");
+            for (let k = 1; k < (5-i); k++) {
+                document.write(" ");
+            }
+            for (let j = 0; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("</pre>");
+        }
+    }
+    veTamGiac3();
+    document.write("<br>");
+    function veTamGiac4() {
+        let i = 0;
+        for (i; i < 5; i++) {
+            document.write("<pre>");
+            for (let k = 1; k <= i; k++) {
+                document.write(" ");
+            }
+            for (let j = 0; j < (5-i); j++) {
+                document.write("*");
+            }
+            document.write("</pre>");
+        }
+    }
+    veTamGiac4();
+</script>
+
+</body>
+</html>
